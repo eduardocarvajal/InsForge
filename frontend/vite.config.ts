@@ -28,7 +28,7 @@ export default defineConfig({
   server: {
     host: true, // Listen on all interfaces when running in Docker
     allowedHosts: ["dbinsforge.fiielgroup.com"], // Listen on all interfaces when running in Docker
-    port: 7131,
+    port: 7132,
     proxy: {
       '/api': {
         target: BACKEND_URL,
