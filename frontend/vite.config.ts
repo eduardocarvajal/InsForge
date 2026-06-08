@@ -27,7 +27,8 @@ export default defineConfig({
   },
   server: {
     host: true, // Listen on all interfaces when running in Docker
-    port: 7131,
+    allowedHosts: ["vendix.247gps.info"], // Listen on all interfaces when running in Docker
+    port: 7332,
     proxy: {
       '/api': {
         target: BACKEND_URL,
